@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ô de Rose · Institut de beauté et Head Spa à Digne-les-Bains</title>
+  <meta name="description" content="Ô de Rose, institut de beauté à Digne-les-Bains : Head Spa japonais, soins du visage Physiodermie, modelages, lumière pulsée, Starvac, semi-permanent. Réservation en ligne 24 h/24. 5,0 sur 688 avis.">
+  <meta name="theme-color" content="#3A2926">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ô de Rose · Institut de beauté et Head Spa à Digne-les-Bains">
+  <meta property="og:description" content="Le temps d’un soin, le monde baisse le volume. Head Spa japonais, soins du visage, modelages, lumière pulsée.">
+  <meta property="og:image" content="assets/img/planity/planity-1.jpg">
+  <meta property="og:locale" content="fr_FR">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Ô de Rose",
+    "description": "Institut de beauté et Head Spa à Digne-les-Bains : soins du visage et du corps, lumière pulsée, épilation, beauté des mains et des pieds.",
+    "url": "https://www.planity.com/o-de-rose-04000-digne-les-bains",
+    "telephone": "+33616812642",
+    "priceRange": "€€€",
+    "paymentAccepted": "Carte bancaire, espèces",
+    "image": "assets/img/planity/planity-1.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "59 avenue Henri Jaubert",
+      "postalCode": "04000",
+      "addressLocality": "Digne-les-Bains",
+      "addressCountry": "FR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 44.0855419, "longitude": 6.2222266 },
+    "hasMap": "https://www.google.com/maps/place/Institut+%C3%94+de+Rose/@44.0855419,6.2222266,17z",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday"], "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/institutoderose/",
+      "https://www.facebook.com/AlbaneseManon/",
+      "https://www.planity.com/o-de-rose-04000-digne-les-bains"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <!-- Symboles SVG : pétale, anneau -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="petal" viewBox="0 0 60 90">
+        <path d="M30 2C52 22 62 52 30 88C-2 52 8 22 30 2Z" fill="currentColor"/>
+        <path d="M30 14C30 40 30 62 30 82" stroke="rgba(255,255,255,.35)" stroke-width="1.2" fill="none"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ================= LOADER ================= -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__center">
+      <svg class="loader__ring" viewBox="0 0 200 200" fill="none">
+        <circle class="loader__track" cx="100" cy="100" r="92"/>
+        <circle class="loader__draw" cx="100" cy="100" r="92" pathLength="100"/>
+        <circle class="loader__drop" cx="100" cy="100" r="62"/>
+      </svg>
+      <span class="loader__o">Ô</span>
+    </div>
+    <p class="loader__word"><span>de</span> Rose</p>
+    <p class="loader__count"><span id="loaderNum">0</span>%</p>
+  </div>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label" id="cursorLabel"></span></div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#top" aria-label="Ô de Rose, retour en haut">
+      <span class="nav__o">Ô</span><span class="nav__name"><em>de</em> Rose</span>
+    </a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#lieu" class="ulink">Le lieu</a>
+      <a href="#soins" class="ulink">Nos soins</a>
+      <a href="#headspa" class="ulink">Head Spa</a>
+      <a href="#tarifs" class="ulink">Tarifs</a>
+      <a href="#avis" class="ulink">Avis</a>
+      <a href="#venir" class="ulink">Venir</a>
+    </nav>
+    <a class="btn btn--sm nav__cta magnetic" data-planity href="https://www.planity.com/o-de-rose-04000-digne-les-bains" target="_blank" rel="noopener"><span>Réserver</span></a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" aria-hidden="true" inert>
+    <nav class="menu__nav" aria-label="Menu mobile">
+      <a href="#lieu"><i>01</i>Le lieu</a>
+      <a href="#soins"><i>02</i>Nos soins</a>
+      <a href="#headspa"><i>03</i>Head Spa</a>
+      <a href="#tarifs"><i>04</i>Tarifs</a>
+      <a href="#avis"><i>05</i>Avis</a>
+      <a href="#venir"><i>06</i>Venir</a>
+    </nav>
+    <div class="menu__foot">
+      <a class="btn btn--rose" data-planity href="https://www.planity.com/o-de-rose-04000-digne-les-bains" target="_blank" rel="noopener"><span>Réserver en ligne</span></a>
+      <a class="menu__tel" href="tel:+33616812642">06 16 81 26 42</a>
+    </div>
+  </div>
+
+  <a class="fab" href="tel:+33616812642" aria-label="Appeler l’institut Ô de Rose">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+    <span>Appeler</span>
+  </a>
+
+  <main id="contenu">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <div class="hero__media" id="heroMedia">
+        <video class="hero__video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/img/stock/pexels-11439083.jpg" aria-hidden="true" tabindex="-1">
+          <source src="assets/video/hero-roses-1080.mp4" type="video/mp4" media="(min-width: 900px)">
+          <source src="assets/video/hero-roses-720.mp4" type="video/mp4">
+        </video>
+        <div class="hero__shade"></div>
+      </div>
+
+      <div class="petals" id="petals" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <p class="eyebrow hero__eyebrow" data-hero="fade"><span class="eyebrow__dot"></span>Institut de beauté &amp; Head Spa · Digne-les-Bains</p>
+
+        <h1 class="hero__title" aria-label="Ô de Rose">
+          <span class="hero__o" id="heroO" aria-hidden="true">
+            <svg class="hero__ring" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+              <circle cx="100" cy="100" r="96" stroke="currentColor" stroke-width=".8" stroke-dasharray="2 7"/>
+              <circle cx="100" cy="100" r="82" stroke="currentColor" stroke-width=".5" opacity=".6"/>
+            </svg>
+            <span class="hero__o-char" data-chars>Ô</span>
+          </span>
+          <span class="hero__de" aria-hidden="true" data-chars>de</span>
+          <span class="hero__rose" aria-hidden="true" data-chars>Rose</span>
+        </h1>
+
+        <p class="hero__lead" data-hero="fade">Le temps d’un soin, <em>le monde baisse le volume.</em> Head Spa japonais, soins du visage, modelages, lumière pulsée : une cabine silencieuse et des mains expertes.</p>
+
+        <div class="hero__actions" data-hero="fade">
+          <a class="btn btn--rose magnetic" data-planity href="https://www.planity.com/o-de-rose-04000-digne-les-bains" target="_blank" rel="noopener"><span>Réserver mon soin</span></a>
+          <a class="btn btn--ghost magnetic" href="tel:+33616812642"><span>06 16 81 26 42</span></a>
+        </div>
+
+        <ul class="hero__facts" data-hero="fade">
+          <li><strong>5,0</strong><span>sur 688 avis Planity</span></li>
+          <li id="openNow"><strong>—</strong><span>horaires</span></li>
+          <li><strong>24 h/24</strong><span>réservation en ligne</span></li>
+        </ul>
+      </div>
+
+      <a class="hero__scroll" href="#lieu" data-hero="fade" aria-label="Faire défiler vers le lieu">
+        <span class="hero__scroll-ring"><i></i></span><span>Défiler</span>
+      </a>
+
+      <svg class="wave wave--hero" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path class="wave__a" d="M0 70C180 20 360 20 540 62S900 108 1080 66 1320 20 1440 50V120H0Z"/>
+      </svg>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <section class="marquee" aria-label="Nos spécialités">
+      <div class="marquee__row" data-dir="-1">
+        <div class="marquee__track">
+          <span>Head Spa japonais</span><i></i><span>Soins du visage</span><i></i><span>Lumière pulsée</span><i></i><span>Modelages</span><i></i><span>Starvac</span><i></i><span>Yumi Lashes</span><i></i><span>Semi-permanent</span><i></i><span>Épilation</span><i></i>
+        </div>
+      </div>
+      <div class="marquee__row marquee__row--alt" data-dir="1">
+        <div class="marquee__track">
+          <span>Physiodermie</span><i></i><span>Pressodynamie</span><i></i><span>Photo-rajeunissement</span><i></i><span>Beauté des mains</span><i></i><span>Beauté des pieds</span><i></i><span>Cure minceur</span><i></i><span>Cils &amp; sourcils</span><i></i><span>Soins cérémonies</span><i></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LE LIEU (pinné) ================= -->
+    <section class="story" id="lieu" aria-labelledby="storyTitle">
+      <div class="story__pin" id="storyPin">
+        <div class="story__text">
+          <p class="eyebrow"><span class="eyebrow__dot"></span>Le lieu · <span id="storyIdx">01</span> / 04</p>
+          <h2 class="sr-only" id="storyTitle">Le lieu et ses mains</h2>
+          <div class="story__steps" id="storySteps">
+            <article class="step is-active" data-step="0">
+              <h3 class="step__title">Au 59, avenue <em>Henri Jaubert</em></h3>
+              <p>Dans le petit quartier de la Sèbe, entre la caserne de pompiers et l’école, une façade claire et un grand <em>Ô</em> qui vous attend. Trois places de parking juste devant, réservées aux clientes et clients.</p>
+            </article>
+            <article class="step" data-step="1">
+              <h3 class="step__title">Une cabine <em>qui apaise</em></h3>
+              <p>Lumière douce, bois clair, une petite lampe qui réchauffe le mur. La musique, les odeurs, le matériel sous emballage : tout est pensé pour que vous lâchiez prise dès que vous vous allongez.</p>
+            </article>
+            <article class="step" data-step="2">
+              <h3 class="step__title">Les mains <em>de Manon</em></h3>
+              <p>Esthéticienne formée en BTS Esthétique et cosmétique (2014–2016), Manon prend le temps d’écouter avant de toucher. Visage, corps, épilation, lumière pulsée : chaque geste est précis et doux. Depuis mars 2025, Aurore signe aussi les ongles : chablon, GelX, nail art.</p>
+            </article>
+            <article class="step" data-step="3">
+              <h3 class="step__title">Et puis <em>le silence</em></h3>
+              <p>Pas de bruit de porte, pas de téléphone qui sonne, pas d’autre cliente à côté. Ses clientes décrivent un endroit « hyper silencieux » où l’intimité est respectée. Sept ans que l’institut cultive ce calme.</p>
+            </article>
+          </div>
+          <div class="story__dots" aria-hidden="true"><i class="is-on"></i><i></i><i></i><i></i></div>
+        </div>
+
+        <div class="story__visual">
+          <svg class="story__ring" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+            <circle cx="200" cy="200" r="192" stroke="currentColor" stroke-opacity=".18" stroke-width="1.5"/>
+            <circle id="storyRing" cx="200" cy="200" r="192" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-90 200 200)"/>
+          </svg>
+          <div class="story__frame">
+            <figure class="story__img is-active" data-i="0"><img src="assets/img/planity/planity-8.jpg" alt="La façade de l’institut Ô de Rose, avenue Henri Jaubert à Digne-les-Bains" width="773" height="460" decoding="async"></figure>
+            <figure class="story__img" data-i="1"><img src="assets/img/planity/planity-4.jpg" alt="Une cabine de soin aux tons chauds avec table de massage et cadres au mur" width="773" height="460" loading="lazy" decoding="async"></figure>
+            <figure class="story__img" data-i="2"><img src="assets/img/planity/planity-3.jpg" alt="Manon réalise un soin du visage en cabine" width="773" height="460" loading="lazy" decoding="async"></figure>
+            <figure class="story__img" data-i="3"><img src="assets/img/planity/planity-1.jpg" alt="Cabine avec lavabo, table de massage et lampe chaleureuse" width="773" height="460" loading="lazy" decoding="async"></figure>
+          </div>
+          <span class="story__num" id="storyNum">01</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NOS SOINS (défilement horizontal) ================= -->
+    <section class="uni" id="soins" aria-labelledby="uniTitle">
+      <div class="uni__pin" id="uniPin">
+        <header class="uni__head">
+          <p class="eyebrow"><span class="eyebrow__dot"></span>Nos univers</p>
+          <h2 class="title" id="uniTitle" data-split>Huit façons de <em>prendre soin</em></h2>
+          <p class="uni__hint"><span>Faites défiler</span><svg viewBox="0 0 60 12" width="60" height="12" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 6h58M52 1l6 5-6 5"/></svg></p>
+        </header>
+
+        <div class="uni__track" id="uniTrack">
+          <a class="card tilt" href="#tarifs" data-cat="headspa">
+            <span class="card__glare"></span>
+            <figure class="card__img"><img src="assets/img/planity/planity-2.jpg" alt="Le bol du Head Spa éclairé en bleu" width="773" height="460" loading="lazy" decoding="async"></figure>
+            <span class="card__no">01</span>
+            <h3>Head Spa</h3>
+            <p>Gommage, modelage et shampooings traitants sous dôme de vapeur. Le rituel japonais du cuir chevelu.</p>
+            <span class="card__price">dès <b>69 €</b></span>
+          </a>
+          <a class="card tilt" href="#tarifs" data-cat="visage">
+            <span class="card__glare"></span>
+            <figure class="card__img"><img src="assets/img/stock/pexels-9335961.jpg" alt="Modelage du visage lors d’un soin" width="1600" height="1066" loading="lazy" decoding="async"></figure>
+            <span class="card__no">02</span>
+            <h3>Soins du visage</h3>
+            <p>Méthode Physiodermie, JADEA, peelings, drainage. Du coup d’éclat à l’anti-âge premium.</p>
+            <span class="card__price">dès <b>45 €</b></span>
+          </a>
+          <a class="card tilt" href="#tarifs" data-cat="corps">
+            <span class="card__glare"></span>
+            <figure class="card__img"><img src="assets/img/stock/pexels-38407786.jpg" alt="Mains en plein modelage du dos" width="1600" height="1066" loading="lazy" decoding="async"></figure>
+            <span class="card__no">03</span>
+            <h3>Corps &amp; cérémonies</h3>
+            <p>Gommages, modelages relaxants, dos à la bougie, Cocoon pour les futures mamans.</p>
+            <span class="card__price">dès <b>35 €</b></span>
+          </a>
+          <a class="card tilt" href="#tarifs" data-cat="ipl-femme">
+            <span class="card__glare"></span>
+            <figure class="card__img"><img src="assets/img/stock/pexels-7446659.jpg" alt="Soin de la peau avec un appareil en cabine" width="1600" height="1066" loading="lazy" decoding="async"></figure>
+            <span class="card__no">04</span>
+            <h3>Lumière pulsée</h3>
+            <p>Dépilation durable, moins douloureuse que le laser, pour elle comme pour lui. Photo-rajeunissement.</p>
+            <span class="card__price">dès <b>35 €</b></span>
+          </a>
+          <a class="card tilt" href="#tarifs" data-cat="starvac-minceur">
+            <span class="card__glare"></span>
+            <figure class="card__img"><img src="assets/img/stock/pexels-6186740.jpg" alt="Bougie, serviettes roulées et brûle-parfum posés sur une table en bois" width="1600" height="900" loading="lazy" decoding="async"></figure>
+            <span class="card__no">05</span>
+            <h3>Starvac &amp; pressodynamie</h3>
+            <p>Minceur, fermeté, anti-âge : le stretching cellulaire. Bottes de pressodynamie pour les jambes.</p>
+            <span class="card__price">dès <b>30 €</b></span>
+          </a>
+          <a class="card tilt" href="#tarifs" data-cat="regard">
+            <span class="card__glare"></span>
+            <figure class="card__img"><img src="assets/img/stock/pexels-5938217.jpg" alt="Femme en peignoir avec patchs sous les yeux" width="1067" height="1600" loading="lazy" decoding="async"></figure>
+            <span class="card__no">06</span>
+            <h3>Beauté du regard</h3>
+            <p>Yumi Lashes (rehaussement et teinture), teinture et restructuration des sourcils.</p>
+            <span class="card__price">dès <b>15 €</b></span>
+          </a>
+          <a class="card tilt" href="#tarifs" data-cat="mains">
+            <span class="card__glare"></span>
+            <figure class="card__img"><img src="assets/img/stock/pexels-2281695.jpg" alt="Main manucurée avec un vernis rose" width="1067" height="1600" loading="lazy" decoding="async"></figure>
+            <span class="card__no">07</span>
+            <h3>Mains &amp; pieds</h3>
+            <p>Beauté, semi-permanent, CalluZéro. Chablon, GelX et nail art avec Aurore.</p>
+            <span class="card__price">dès <b>35 €</b></span>
+          </a>
+          <a class="card tilt" href="#tarifs" data-cat="epil-femme">
+            <span class="card__glare"></span>
+            <figure class="card__img"><img src="assets/img/stock/pexels-21528800.jpg" alt="Branche d’orchidées roses sur fond blanc" width="1600" height="1066" loading="lazy" decoding="async"></figure>
+            <span class="card__no">08</span>
+            <h3>Épilations</h3>
+            <p>À la cire, sourcils à la pince, forfaits malins. Rapide, efficace, matériel stérile.</p>
+            <span class="card__price">dès <b>8 €</b></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HEAD SPA ================= -->
+    <section class="hs" id="headspa" aria-labelledby="hsTitle">
+      <div class="hs__stage" id="hsStage">
+        <div class="hs__video" id="hsVideo">
+          <video id="hsVid" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1">
+            <source src="assets/video/massage-facial-720.mp4" type="video/mp4">
+          </video>
+          <div class="hs__veil"></div>
+        </div>
+        <div class="hs__copy" id="hsCopy">
+          <p class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span>Le rituel du moment</p>
+          <h2 class="title title--xl" id="hsTitle" data-split>Head Spa <em>japonais</em></h2>
+          <p class="hs__lead">Un modelage de bienvenue, un gommage du cuir chevelu, des shampooings traitants choisis pour vos cheveux. Puis la vapeur, les mains, le silence.</p>
+        </div>
+      </div>
+
+      <div class="hs__formulas">
+        <div class="hs__intro">
+          <p class="eyebrow"><span class="eyebrow__dot"></span>Trois formules</p>
+          <p class="hs__note">Après le soin, un sèche-cheveux et une brosse sont à votre disposition. Vous repartez coiffée, détendue, remise à neuf.</p>
+        </div>
+        <div class="hs__cards">
+          <article class="hcard tilt">
+            <span class="card__glare"></span>
+            <svg class="hcard__ring" viewBox="0 0 120 120" fill="none" aria-hidden="true"><circle cx="60" cy="60" r="54" stroke="currentColor" stroke-opacity=".2"/><circle class="hcard__arc" cx="60" cy="60" r="54" stroke="currentColor" stroke-width="2" pathLength="100" stroke-dasharray="100" stroke-dashoffset="62" transform="rotate(-90 60 60)"/></svg>
+            <span class="hcard__min">30<small>min</small></span>
+            <h3>Découverte</h3>
+            <p class="hcard__price">69 €</p>
+            <ul><li>Modelage de bienvenue</li><li>Gommage du cuir chevelu</li><li>2 shampooings traitants</li></ul>
+            <p class="hcard__dur">Durée totale 45 min</p>
+          </article>
+          <article class="hcard hcard--star tilt">
+            <span class="card__glare"></span>
+            <span class="hcard__tag">La préférée</span>
+            <svg class="hcard__ring" viewBox="0 0 120 120" fill="none" aria-hidden="true"><circle cx="60" cy="60" r="54" stroke="currentColor" stroke-opacity=".2"/><circle class="hcard__arc" cx="60" cy="60" r="54" stroke="currentColor" stroke-width="2" pathLength="100" stroke-dasharray="100" stroke-dashoffset="30" transform="rotate(-90 60 60)"/></svg>
+            <span class="hcard__min">60<small>min</small></span>
+            <h3>Global</h3>
+            <p class="hcard__price">99 €</p>
+            <ul><li>Peignes en bois et brosses massantes</li><li>Gommage et 2 shampooings traitants</li><li>Modelage du cuir chevelu</li><li>Soin sous dôme de vapeur</li></ul>
+            <p class="hcard__dur">Durée totale 1 h 15</p>
+          </article>
+          <article class="hcard tilt">
+            <span class="card__glare"></span>
+            <svg class="hcard__ring" viewBox="0 0 120 120" fill="none" aria-hidden="true"><circle cx="60" cy="60" r="54" stroke="currentColor" stroke-opacity=".2"/><circle class="hcard__arc" cx="60" cy="60" r="54" stroke="currentColor" stroke-width="2" pathLength="100" stroke-dasharray="100" stroke-dashoffset="8" transform="rotate(-90 60 60)"/></svg>
+            <span class="hcard__min">75<small>min</small></span>
+            <h3>Prestige</h3>
+            <p class="hcard__price">139 €</p>
+            <ul><li>Tout le soin Global</li><li>Soin du visage : nettoyage, gommage, masque</li></ul>
+            <p class="hcard__dur">Durée totale 1 h 30</p>
+          </article>
+        </div>
+        <div class="hs__cta">
+          <a class="btn btn--rose magnetic" data-planity href="https://www.planity.com/o-de-rose-04000-digne-les-bains" target="_blank" rel="noopener"><span>Réserver un Head Spa</span></a>
+          <p>Options : masque mains ou pieds 10 €, massage mains ou pieds 15 €, masque visage collagène 15 €.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TARIFS ================= -->
+    <section class="carte" id="tarifs" aria-labelledby="carteTitle">
+      <svg class="wave wave--top" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60C240 110 480 110 720 70S1200 10 1440 60V0H0Z"/></svg>
+      <header class="carte__head">
+        <p class="eyebrow"><span class="eyebrow__dot"></span>La carte des soins</p>
+        <h2 class="title" id="carteTitle" data-split>Tous les soins, <em>tous les prix</em></h2>
+        <p class="carte__sub">Les tarifs et durées de l’institut. Choisissez une catégorie, puis réservez en ligne en un clic.</p>
+      </header>
+      <div class="carte__layout">
+        <div class="carte__tabs" id="carteTabs" role="tablist" aria-label="Catégories de soins"></div>
+        <div class="carte__panel" id="cartePanel" role="tabpanel" aria-live="polite" tabindex="0"></div>
+      </div>
+      <noscript><p class="carte__noscript">Activez JavaScript pour consulter la carte des soins, ou retrouvez-la sur <a href="https://www.planity.com/o-de-rose-04000-digne-les-bains">Planity</a>.</p></noscript>
+    </section>
+
+    <!-- ================= CHIFFRES ================= -->
+    <section class="stats" aria-label="L’institut en chiffres">
+      <div class="stats__grid">
+        <div class="stat">
+          <svg viewBox="0 0 120 120" fill="none" aria-hidden="true"><circle cx="60" cy="60" r="56" stroke="currentColor" stroke-opacity=".18"/><circle class="stat__arc" cx="60" cy="60" r="56" stroke="currentColor" stroke-width="2" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-90 60 60)"/></svg>
+          <div class="stat__n"><span data-count="688">0</span></div>
+          <p>avis clients sur Planity</p>
+        </div>
+        <div class="stat">
+          <svg viewBox="0 0 120 120" fill="none" aria-hidden="true"><circle cx="60" cy="60" r="56" stroke="currentColor" stroke-opacity=".18"/><circle class="stat__arc" cx="60" cy="60" r="56" stroke="currentColor" stroke-width="2" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-90 60 60)"/></svg>
+          <div class="stat__n"><span data-count="5" data-dec="1">0</span><small>/5</small></div>
+          <p>note moyenne, accueil, propreté, cadre et prestation</p>
+        </div>
+        <div class="stat">
+          <svg viewBox="0 0 120 120" fill="none" aria-hidden="true"><circle cx="60" cy="60" r="56" stroke="currentColor" stroke-opacity=".18"/><circle class="stat__arc" cx="60" cy="60" r="56" stroke="currentColor" stroke-width="2" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-90 60 60)"/></svg>
+          <div class="stat__n"><span data-count="7">0</span><small>ans</small></div>
+          <p>d’institut à Digne-les-Bains</p>
+        </div>
+        <div class="stat">
+          <svg viewBox="0 0 120 120" fill="none" aria-hidden="true"><circle cx="60" cy="60" r="56" stroke="currentColor" stroke-opacity=".18"/><circle class="stat__arc" cx="60" cy="60" r="56" stroke="currentColor" stroke-width="2" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-90 60 60)"/></svg>
+          <div class="stat__n"><span data-count="0" id="statServices">0</span><small>+</small></div>
+          <p>prestations à la carte</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALERIE ================= -->
+    <section class="gallery" id="galerie" aria-labelledby="galTitle">
+      <header class="gallery__head">
+        <p class="eyebrow"><span class="eyebrow__dot"></span>Galerie</p>
+        <h2 class="title" id="galTitle" data-split>Entrez, <em>regardez</em></h2>
+      </header>
+      <div class="gallery__grid" id="galleryGrid">
+        <button class="gitem g1" data-lb="assets/img/planity/planity-1.jpg" data-cap="La cabine, côté lavabo"><span class="gitem__in"><img src="assets/img/planity/planity-1.jpg" alt="Cabine avec lavabo, table de massage et lampe chaleureuse" loading="lazy" decoding="async"></span><span class="gitem__cap">La cabine, côté lavabo</span></button>
+        <button class="gitem g2" data-lb="assets/img/planity/planity-2.jpg" data-cap="Le bol du Head Spa"><span class="gitem__in"><img src="assets/img/planity/planity-2.jpg" alt="Le bol du Head Spa éclairé en bleu" loading="lazy" decoding="async"></span><span class="gitem__cap">Le bol du Head Spa</span></button>
+        <button class="gitem g3" data-lb="assets/img/stock/pexels-11439083.jpg" data-cap="Roses, comme le nom"><span class="gitem__in"><img src="assets/img/stock/pexels-11439083.jpg" alt="Bouquet de roses pêche" loading="lazy" decoding="async"></span><span class="gitem__cap">Roses, comme le nom</span></button>
+        <button class="gitem g4" data-lb="assets/img/planity/planity-3.jpg" data-cap="Manon, en plein soin du visage"><span class="gitem__in"><img src="assets/img/planity/planity-3.jpg" alt="Manon réalise un soin du visage en cabine" loading="lazy" decoding="async"></span><span class="gitem__cap">Manon, en plein soin</span></button>
+        <button class="gitem g5" data-lb="assets/img/planity/planity-6.jpg" data-cap="Le coin d’attente"><span class="gitem__in"><img src="assets/img/planity/planity-6.jpg" alt="Coin d’attente avec fauteuils en rotin et boiseries" loading="lazy" decoding="async"></span><span class="gitem__cap">Le coin d’attente</span></button>
+        <button class="gitem g6" data-lb="assets/img/planity/planity-4.jpg" data-cap="Seconde cabine"><span class="gitem__in"><img src="assets/img/planity/planity-4.jpg" alt="Cabine avec table de soin et cadres au mur" loading="lazy" decoding="async"></span><span class="gitem__cap">Seconde cabine</span></button>
+        <button class="gitem g7" data-lb="assets/img/stock/pexels-11137699.jpg" data-cap="Bougie et fleurs séchées"><span class="gitem__in"><img src="assets/img/stock/pexels-11137699.jpg" alt="Bougie et fleurs séchées dans un plateau en bois" loading="lazy" decoding="async"></span><span class="gitem__cap">Bougie et fleurs séchées</span></button>
+        <button class="gitem g8" data-lb="assets/img/planity/planity-7.jpg" data-cap="L’espace ongles"><span class="gitem__in"><img src="assets/img/planity/planity-7.jpg" alt="Espace manucure avec table blanche et vernis" loading="lazy" decoding="async"></span><span class="gitem__cap">L’espace ongles</span></button>
+        <button class="gitem g9" data-lb="assets/img/planity/planity-8.jpg" data-cap="La façade, avenue Henri Jaubert"><span class="gitem__in"><img src="assets/img/planity/planity-8.jpg" alt="La façade de l’institut Ô de Rose" loading="lazy" decoding="async"></span><span class="gitem__cap">La façade</span></button>
+        <button class="gitem g10" data-lb="assets/img/planity/planity-5.jpg" data-cap="Les cadres de la cabine"><span class="gitem__in"><img src="assets/img/planity/planity-5.jpg" alt="Mur de cabine avec trois cadres et étagères" loading="lazy" decoding="async"></span><span class="gitem__cap">Les cadres de la cabine</span></button>
+        <button class="gitem g11" data-lb="assets/img/stock/pexels-40557468.jpg" data-cap="Huile de soin"><span class="gitem__in"><img src="assets/img/stock/pexels-40557468.jpg" alt="Flacon d’huile de soin sur fond beige" loading="lazy" decoding="async"></span><span class="gitem__cap">Huile de soin</span></button>
+        <button class="gitem g12" data-lb="assets/img/stock/pexels-28994388.jpg" data-cap="Sérum pour le cuir chevelu"><span class="gitem__in"><img src="assets/img/stock/pexels-28994388.jpg" alt="Sérum appliqué au compte-gouttes sur le cuir chevelu" loading="lazy" decoding="async"></span><span class="gitem__cap">Sérum pour le cuir chevelu</span></button>
+      </div>
+      <p class="gallery__credit">Photos de l’institut (Planity, Instagram) et images libres de droits (Pexels).</p>
+    </section>
+
+    <!-- ================= AVIS ================= -->
+    <section class="reviews" id="avis" aria-labelledby="revTitle">
+      <div class="reviews__top">
+        <div>
+          <p class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span>Ce qu’elles en disent</p>
+          <h2 class="title" id="revTitle" data-split>688 avis, <em>5,0 de moyenne</em></h2>
+        </div>
+        <ul class="criteria" aria-label="Notes détaillées Planity">
+          <li><span>Accueil</span><b>5,0</b><i style="--v:1"></i></li>
+          <li><span>Propreté</span><b>5,0</b><i style="--v:1"></i></li>
+          <li><span>Cadre &amp; ambiance</span><b>5,0</b><i style="--v:1"></i></li>
+          <li><span>Qualité de la prestation</span><b>5,0</b><i style="--v:1"></i></li>
+        </ul>
+      </div>
+
+      <div class="reviews__viewport" id="revViewport" role="region" aria-label="Avis clients" tabindex="0">
+        <div class="reviews__track" id="revTrack"></div>
+      </div>
+      <div class="reviews__ctrl">
+        <button class="rbtn" id="revPrev" aria-label="Avis précédent"><svg viewBox="0 0 24 12" width="24" height="12" fill="none" stroke="currentColor" aria-hidden="true"><path d="M24 6H2M7 1 2 6l5 5"/></svg></button>
+        <div class="reviews__bar" aria-hidden="true"><i id="revBar"></i></div>
+        <button class="rbtn" id="revNext" aria-label="Avis suivant"><svg viewBox="0 0 24 12" width="24" height="12" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 6h22M17 1l5 5-5 5"/></svg></button>
+      </div>
+      <p class="reviews__src">Avis réels publiés sur <a href="https://www.planity.com/o-de-rose-04000-digne-les-bains" target="_blank" rel="noopener">Planity</a> (688 avis, 5,0) et <a href="https://www.google.com/maps/place/Institut+%C3%94+de+Rose/@44.0855419,6.2222266,17z" target="_blank" rel="noopener">Google</a> (56 avis, 5,0).</p>
+    </section>
+
+    <!-- ================= RÉSERVER ================= -->
+    <section class="book" id="reserver" aria-labelledby="bookTitle">
+      <div class="book__rings" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="book__inner">
+        <p class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span>Votre rendez-vous</p>
+        <h2 class="title title--xl" id="bookTitle" data-split>Votre place <em>vous attend</em></h2>
+        <p class="book__lead">Réservez en ligne à toute heure, confirmation immédiate. Vous préférez parler à quelqu’un ? Appelez, ou envoyez un SMS : on vous répond.</p>
+
+        <div class="book__actions">
+          <a class="btn btn--rose btn--lg magnetic" data-planity href="https://www.planity.com/o-de-rose-04000-digne-les-bains" target="_blank" rel="noopener"><span>Réserver en ligne</span></a>
+          <a class="btn btn--ghost btn--lg magnetic" href="tel:+33616812642"><span>Appeler le 06 16 81 26 42</span></a>
+        </div>
+
+        <div class="book__grid">
+          <form class="sms" id="smsForm" autocomplete="off" novalidate>
+            <h3>Demande par SMS</h3>
+            <p class="sms__sub">Remplissez, votre téléphone ouvre un SMS déjà écrit. Rien n’est stocké sur ce site.</p>
+            <label>Prénom<input type="text" id="smsName" name="prenom" placeholder="Votre prénom" autocomplete="given-name"></label>
+            <div class="pick" id="pick">
+              <span class="pick__label" id="pickLabel">Soin souhaité</span>
+              <input type="hidden" id="smsSoin" name="soin" value="">
+              <button type="button" class="pick__btn" id="pickBtn" aria-haspopup="dialog" aria-expanded="false" aria-controls="pickPanel" aria-labelledby="pickLabel pickValue">
+                <span class="pick__value" id="pickValue">Je ne sais pas encore, conseillez-moi</span>
+                <svg class="pick__chev" viewBox="0 0 12 8" width="12" height="8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 1.5 6 6.5 11 1.5"/></svg>
+              </button>
+              <div class="pick__panel" id="pickPanel" role="dialog" aria-label="Choisir un soin" hidden>
+                <div class="pick__cats" id="pickCats"></div>
+                <input type="search" class="pick__search" id="pickSearch" placeholder="Rechercher un soin (ex. peeling, jambes, head spa)" aria-label="Rechercher un soin" autocomplete="off" aria-controls="pickList">
+                <ul class="pick__list" id="pickList" role="listbox" aria-label="Soins" data-lenis-prevent></ul>
+              </div>
+            </div>
+            <fieldset class="seg">
+              <legend>Jour souhaité</legend>
+              <div class="chips" id="smsDays"></div>
+              <p class="sms__hint">Mercredi et dimanche : fermé. Samedi : matin uniquement, sur rendez-vous.</p>
+            </fieldset>
+            <fieldset class="seg">
+              <legend>Moment</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="moment" value="" checked><span>Peu importe</span></label>
+                <label class="chip"><input type="radio" name="moment" value="Matin"><span>Matin</span></label>
+                <label class="chip"><input type="radio" name="moment" value="Après-midi"><span>Après-midi</span></label>
+              </div>
+            </fieldset>
+            <label>Précision (facultatif)<textarea id="smsNote" name="note" rows="2" placeholder="Première fois, allergie, envie particulière…"></textarea></label>
+            <p class="sms__preview" id="smsPreview" aria-live="polite"></p>
+            <div class="sms__btns">
+              <a class="btn btn--rose magnetic" id="smsSend" href="sms:+33616812642"><span>Envoyer le SMS</span></a>
+              <button type="button" class="btn btn--ghost" id="smsCopy"><span>Copier le message</span></button>
+            </div>
+          </form>
+
+          <div class="book__side">
+            <div class="mini">
+              <h3>Offrir un moment</h3>
+              <p>Une carte cadeau pour un soin, un Head Spa ou un modelage : l’option « Offrir » se trouve sur la page Planity de l’institut.</p>
+              <a class="ulink ulink--light" href="https://www.planity.com/o-de-rose-04000-digne-les-bains" target="_blank" rel="noopener">Offrir sur Planity</a>
+            </div>
+            <div class="mini">
+              <h3>Lumière pulsée, premier rendez-vous</h3>
+              <p>Pour une première séance, on commence par un échange : appelez ou envoyez un SMS. Comptez 6 à 8 séances pour un résultat optimal.</p>
+              <a class="ulink ulink--light" href="tel:+33616812642">Appeler maintenant</a>
+            </div>
+            <div class="mini">
+              <h3>Ongles : chablon, GelX, nail art</h3>
+              <p>Aurore (Aura Nails &amp; Beauty) vous reçoit sur rendez-vous, du lundi au vendredi de 9 h à 21 h et le samedi de 9 h à 15 h.</p>
+              <a class="ulink ulink--light" href="tel:+33616812642">Prendre rendez-vous</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="faq" id="faq" aria-labelledby="faqTitle">
+      <div class="faq__inner">
+        <header>
+          <p class="eyebrow"><span class="eyebrow__dot"></span>Avant votre venue</p>
+          <h2 class="title" id="faqTitle" data-split>Les <em>questions</em> qu’on nous pose</h2>
+        </header>
+        <div class="faq__list">
+          <details><summary>Comment prendre rendez-vous ?</summary><div><p>En ligne sur Planity, 24 h/24 avec confirmation immédiate, par téléphone ou par SMS au 06 16 81 26 42. Le samedi (9 h – 13 h), les rendez-vous se prennent uniquement sur réservation.</p></div></details>
+          <details><summary>Comment se passe un premier rendez-vous de lumière pulsée ?</summary><div><p>Pour un premier rendez-vous, contactez l’institut : on commence par un échange. Comptez 6 à 8 séances pour un résultat optimal. La lumière pulsée offre des résultats proches du laser, pour une dépilation moins coûteuse et moins douloureuse.</p></div></details>
+          <details><summary>Le peeling convient-il à toutes les peaux ?</summary><div><p>Le Peeling Bio Rénovateur comporte des contre-indications. Un diagnostic de peau est préférable avant le rendez-vous : appelez-nous, on vous oriente vers le bon soin.</p></div></details>
+          <details><summary>Comment me préparer pour le rehaussement de cils Yumi Lashes ?</summary><div><p>Venez démaquillée. Pendant les 24 h qui suivent : ne pas mouiller les cils, ne pas les frotter, n’appliquer aucun produit dessus et éviter sauna et hammam.</p></div></details>
+          <details><summary>Où se garer ? Quels moyens de paiement ?</summary><div><p>Trois places de parking sont réservées à la clientèle juste devant l’institut. Le règlement se fait par carte bancaire ou en espèces.</p></div></details>
+          <details><summary>Je veux offrir un soin, c’est possible ?</summary><div><p>Oui : l’option « Offrir » est disponible sur la page Planity de l’institut. Vous pouvez aussi nous appeler pour en parler.</p></div></details>
+          <details><summary>Qui s’occupe des ongles (chablon, GelX, nail art) ?</summary><div><p>Aurore, prothésiste ongulaire, installée à l’institut depuis le 10 mars 2025, sous l’enseigne Aura Nails &amp; Beauty. Rendez-vous uniquement sur réservation.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NOUS TROUVER ================= -->
+    <section class="find" id="venir" aria-labelledby="findTitle">
+      <div class="find__inner">
+        <div class="find__info">
+          <p class="eyebrow"><span class="eyebrow__dot"></span>Nous trouver</p>
+          <h2 class="title" id="findTitle" data-split>Au 59, avenue <em>Henri Jaubert</em></h2>
+          <address>
+            <p>59 avenue Henri Jaubert<br>04000 Digne-les-Bains</p>
+            <p class="find__where">Quartier de la Sèbe, entre la caserne de pompiers et l’école. Trois places de parking devant l’institut.</p>
+            <p><a class="ulink" href="tel:+33616812642">06 16 81 26 42</a></p>
+          </address>
+
+          <h3 class="find__h">Horaires</h3>
+          <table class="hours" id="hoursTable">
+            <caption class="sr-only">Horaires d’ouverture</caption>
+            <tbody>
+              <tr data-day="1"><th>Lundi</th><td>9 h – 18 h</td></tr>
+              <tr data-day="2"><th>Mardi</th><td>9 h – 18 h</td></tr>
+              <tr data-day="3"><th>Mercredi</th><td class="is-closed">Fermé</td></tr>
+              <tr data-day="4"><th>Jeudi</th><td>9 h – 18 h</td></tr>
+              <tr data-day="5"><th>Vendredi</th><td>9 h – 18 h</td></tr>
+              <tr data-day="6"><th>Samedi</th><td>9 h – 13 h <em>sur rendez-vous</em></td></tr>
+              <tr data-day="0"><th>Dimanche</th><td class="is-closed">Fermé</td></tr>
+            </tbody>
+          </table>
+          <p class="find__status" id="statusLine" aria-live="polite"></p>
+          <div class="find__btns">
+            <a class="btn btn--rose magnetic" href="https://www.google.com/maps/place/Institut+%C3%94+de+Rose/@44.0855419,6.2222266,17z/data=!4m6!3m5!1s0x12cb9b62c5d7cccd:0xa61922d03b42040b!8m2!3d44.0855419!4d6.2222266!16s%2Fg%2F11h0t6tnws" target="_blank" rel="noopener"><span>Itinéraire Google Maps</span></a>
+            <a class="btn btn--ghost-dark magnetic" href="tel:+33616812642"><span>Appeler</span></a>
+          </div>
+        </div>
+        <div class="find__map">
+          <iframe title="Carte Google Maps : Institut Ô de Rose, 59 avenue Henri Jaubert, Digne-les-Bains" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+            src="https://maps.google.com/maps?q=Institut%20%C3%94%20de%20Rose%2C%2059%20avenue%20Henri%20Jaubert%2C%2004000%20Digne-les-Bains&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
+          <a class="find__maplink" href="https://www.google.com/maps/place/Institut+%C3%94+de+Rose/@44.0855419,6.2222266,17z/data=!4m6!3m5!1s0x12cb9b62c5d7cccd:0xa61922d03b42040b!8m2!3d44.0855419!4d6.2222266!16s%2Fg%2F11h0t6tnws" target="_blank" rel="noopener" aria-label="Ouvrir l’institut dans Google Maps (nouvel onglet)"><span>Ouvrir dans Google Maps</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="foot">
+    <div class="foot__top">
+      <div class="foot__col">
+        <h3>Contact</h3>
+        <p><a class="ulink ulink--light" href="tel:+33616812642">06 16 81 26 42</a></p>
+        <p>59 avenue Henri Jaubert<br>04000 Digne-les-Bains</p>
+      </div>
+      <div class="foot__col">
+        <h3>Suivre l’institut</h3>
+        <p><a class="ulink ulink--light" href="https://www.instagram.com/institutoderose/" target="_blank" rel="noopener">Instagram · @institutoderose</a></p>
+        <p><a class="ulink ulink--light" href="https://www.facebook.com/AlbaneseManon/" target="_blank" rel="noopener">Facebook · Institut Ô de Rose</a></p>
+        <p><a class="ulink ulink--light" href="https://www.planity.com/o-de-rose-04000-digne-les-bains" target="_blank" rel="noopener">Planity · réserver ou offrir</a></p>
+      </div>
+      <div class="foot__col">
+        <h3>Aller à</h3>
+        <p><a class="ulink ulink--light" href="#lieu">Le lieu</a></p>
+        <p><a class="ulink ulink--light" href="#headspa">Head Spa</a></p>
+        <p><a class="ulink ulink--light" href="#tarifs">Tarifs</a></p>
+        <p><a class="ulink ulink--light" href="#faq">Questions</a></p>
+      </div>
+      <div class="foot__col foot__col--cta">
+        <a class="btn btn--rose magnetic" data-planity href="https://www.planity.com/o-de-rose-04000-digne-les-bains" target="_blank" rel="noopener"><span>Réserver</span></a>
+        <button class="foot__top-btn" id="toTop" aria-label="Retour en haut de la page"><svg viewBox="0 0 12 24" width="12" height="24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M6 24V2M1 7l5-5 5 5"/></svg></button>
+      </div>
+    </div>
+    <p class="foot__giant" id="footGiant" aria-hidden="true"><span data-chars>Ô</span><span class="foot__de" data-chars>de</span><span data-chars>Rose</span></p>
+    <div class="foot__bottom">
+      <p>© 2026 Ô de Rose · Institut de beauté, Digne-les-Bains</p>
+      <p>Photos : institut Ô de Rose (Planity, Instagram) · images libres de droits Pexels</p>
+      <button class="ulink ulink--light foot__legal" id="legalBtn">Mentions légales</button>
+    </div>
+  </footer>
+
+  <dialog class="legal" id="legal" aria-labelledby="legalTitle">
+    <form method="dialog">
+      <h2 id="legalTitle">Mentions légales</h2>
+      <p><strong>Éditeur du site :</strong> Ô de Rose, institut de beauté, 59 avenue Henri Jaubert, 04000 Digne-les-Bains.</p>
+      <p><strong>Téléphone :</strong> 06 16 81 26 42.</p>
+      <p><strong>Forme juridique, SIRET, directrice de la publication :</strong> à compléter par l’institut.</p>
+      <p><strong>Hébergement :</strong> à compléter.</p>
+      <p><strong>Données personnelles :</strong> ce site ne dépose aucun cookie et ne collecte aucune donnée. Le formulaire de demande de rendez-vous ouvre simplement un SMS sur votre téléphone. La réservation en ligne se fait sur Planity, qui applique sa propre politique de confidentialité.</p>
+      <p><strong>Crédits :</strong> photos de l’institut (Planity, Instagram) et images libres de droits Pexels.</p>
+      <button class="btn btn--rose"><span>Fermer</span></button>
+    </form>
+  </dialog>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photo agrandie">
+    <button class="lightbox__close" id="lbClose" aria-label="Fermer la photo">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Photo précédente">‹</button>
+    <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Photo suivante">›</button>
+  </dialog>
+
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/lenis.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
